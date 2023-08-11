@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  border: 2px solid blaCK;
+  display: flex;
+  width: 90px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  margin: 6px;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 1.5s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.ball.right {
+  transform: translateX(49px);
+}
+
+.sun,
+.Moon {
+  font-size: 24px;
+}
+.Moon {
+  margin-right: 24px;
+  margin-left: 4px;
+}
+
+.dark {
+  background-image: linear-gradient(
+    to top left,
+    rgb(61, 59, 59),
+    rgb(80, 73, 73),
+    rgb(164, 160, 160),
+    rgb(151, 148, 148),
+    rgb(180, 174, 174),
+    rgb(239, 230, 230),
+    rgb(220, 214, 214)
+  );
+}
+
+.bright {
+  background-image: linear-gradient(
+    to bottom right,
+    white,
+    white,
+    yellow,
+    yellow,
+    rgb(255, 166, 0),
+    orange,
+    yellow,
+    orange
+  );
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+}
